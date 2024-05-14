@@ -7,6 +7,8 @@ import { Plus } from "lucide-react";
 import { columns } from "@/components/collections/CollectionColumns";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { DataTable } from "@/components/custom ui/DataTable";
+import Loader from "@/components/custom ui/Loader";
 const Collections = () => {
   const router = useRouter();
 
@@ -30,7 +32,26 @@ const Collections = () => {
     getCollections();
   }, []);
 
-  return <div className="px-10 py-5">collection Page</div>;
+  return loading ? (
+    <Loader />
+  ) : (
+    <div className="py-12 px-5 md:px-24">
+      <div className="flex items-center justify-between">
+        <p className="text-heading2-bold text-primaryBlack font-uniqlo">
+          Collections
+        </p>
+        <Button
+          className="bg-primaryBlack text-white"
+          onClick={() => router.push("/collections/new")}
+        >
+          <Plus className="h-4 w-4 mr-2" />
+          Create Collection
+        </Button>
+      </div>
+      <Separator className="bg-primaryBlack mt-4 mb-7" />
+      <DataTable columns={columns} data={collections} searchKey="title" />
+    </div>
+  );
 };
 
 export default Collections;

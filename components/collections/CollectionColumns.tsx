@@ -1,8 +1,10 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import Delete from "../custom ui/Delete";
+import { FilePenLine } from "lucide-react";
 import Link from "next/link";
+import Delete from "../custom ui/Delete";
+import { Button } from "../ui/button";
 
 export const columns: ColumnDef<CollectionType>[] = [
   {
@@ -11,7 +13,7 @@ export const columns: ColumnDef<CollectionType>[] = [
     cell: ({ row }) => (
       <Link
         href={`/collections/${row.original._id}`}
-        className="hover:text-red-1"
+        className="hover:text-red-1 capitalize font-uniqlo"
       >
         {row.original.title}
       </Link>
@@ -24,6 +26,16 @@ export const columns: ColumnDef<CollectionType>[] = [
   },
   {
     id: "actions",
-    cell: ({ row }) => <Delete item="collection" id={row.original._id} />,
+    header: "Actions",
+    cell: ({ row }) => (
+      <div className="flex gap-4 items-center">
+        <Link href={`/collections/${row.original._id}`}>
+          <Button className="bg-yellow-400">
+            <FilePenLine className="h-4 w-4 text-white" />
+          </Button>
+        </Link>
+        <Delete item="collection" id={row.original._id} />
+      </div>
+    ),
   },
 ];

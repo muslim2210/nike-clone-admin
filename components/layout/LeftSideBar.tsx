@@ -23,14 +23,14 @@ const LeftSideBar = () => {
               pathname === link.url ? "text-primaryRed" : "text-primaryBlack"
             }`}
           >
-            {link.icon} <p>{link.label}</p>
+            {link.icon} <p className="font-uniqlo capitalize">{link.label}</p>
           </Link>
         ))}
       </div>
 
       <div className="flex gap-4 text-body-medium items-center">
         <UserButton />
-        <p className="text-primaryBlack">Edit Profile</p>
+        <p className="text-primaryBlack font-uniqlo">Edit Profile</p>
       </div>
     </div>
   );

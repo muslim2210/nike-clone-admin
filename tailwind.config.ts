@@ -74,7 +74,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        UniqloFont: ["UniqloFont", "sans-serif"],
+        uniqlo: ["UniqloFont, sans-serif"],
       },
       colors: {
         primaryRed: "#f6303f",
