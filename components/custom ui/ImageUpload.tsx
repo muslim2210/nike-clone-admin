@@ -55,6 +55,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
             {({ open }) => {
               return (
                 <button
+                  type="button"
                   onClick={() => open()}
                   className="text-white py-2 bg-primaryBlack2 px-4 rounded-full flex items-center max-w-[200px] mx-auto"
                 >

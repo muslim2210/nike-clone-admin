@@ -93,7 +93,7 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
         </p>
       )}
       <Separator className="bg-primaryBlack mt-4 mb-7" />
-      <div className="max-w-[500px] lg:max-w-[800px]">
+      <div className="max-w-[600px] lg:max-w-[900px]">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <FormField
@@ -109,6 +109,7 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
                       onKeyDown={handleKeyPress}
                     />
                   </FormControl>
+                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -126,6 +127,7 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
                       onKeyDown={handleKeyPress}
                     />
                   </FormControl>
+                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -142,6 +144,7 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
                       onRemove={() => field.onChange("")}
                     />
                   </FormControl>
+                  <FormMessage />
                 </FormItem>
               )}
             />

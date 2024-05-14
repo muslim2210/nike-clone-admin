@@ -32,7 +32,7 @@ export const GET = async (
   }
 };
 
-//UPDATE COLLECTION DATA
+//UPDATE COLLECTION DETAIL DATA
 export const POST = async (
   req: NextRequest,
   { params }: { params: { collectionId: string } }
