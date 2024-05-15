@@ -37,9 +37,7 @@ const Collections = () => {
   ) : (
     <div className="py-12 px-5 md:px-24">
       <div className="flex items-center justify-between">
-        <p className="text-heading2-bold text-primaryBlack font-uniqlo">
-          Collections
-        </p>
+        <p className="text-heading2-bold text-primaryBlack">Collections</p>
         <Button
           className="bg-primaryBlack text-white"
           onClick={() => router.push("/collections/new")}

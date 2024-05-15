@@ -126,15 +126,11 @@ const ProductForm: React.FC<ProductFormProps> = ({ initialData }) => {
     <div className="py-12 px-5 md:px-24">
       {initialData ? (
         <div className="flex items-center justify-between">
-          <p className="text-heading2-bold text-primaryBlack font-uniqlo">
-            Edit Product
-          </p>
+          <p className="text-heading2-bold text-primaryBlack">Edit Product</p>
           <Delete id={initialData._id} item="product" />
         </div>
       ) : (
-        <p className="text-heading2-bold text-primaryBlack font-uniqlo">
-          Create Product
-        </p>
+        <p className="text-heading2-bold text-primaryBlack">Create Product</p>
       )}
       <Separator className="bg-primaryBlack mt-4 mb-7" />
       <div className="max-w-[600px] lg:max-w-[900px]">

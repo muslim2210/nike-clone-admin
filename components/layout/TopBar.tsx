@@ -14,8 +14,8 @@ const TopBar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="sticky top-0 z-20 w-full h-[80px] flex justify-between items-center px-5 bg-fuchsia-50 shadow-xl lg:hidden">
-      <Image src="/uniqlo-logo.png" alt="logo" width={80} height={50} />
+    <div className="sticky top-0 z-20 w-full h-[80px] flex justify-between items-center px-5 bg-primaryGray shadow-xl lg:hidden">
+      <Image src="/logo.svg" alt="logo" width={80} height={50} />
 
       <div className="flex gap-8 max-md:hidden">
         {navLinks.map((link) => (

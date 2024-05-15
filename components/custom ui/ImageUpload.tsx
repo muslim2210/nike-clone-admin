@@ -26,7 +26,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
         htmlFor="cover-photo"
         className="block text-sm font-medium leading-6 text-gray-900"
       >
-        Upload Foto Product
+        Upload Foto
       </label>
       <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
         <div className="flex flex-col justify-center">
@@ -57,7 +57,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
                 <button
                   type="button"
                   onClick={() => open()}
-                  className="text-white py-2 bg-primaryBlack2 px-4 rounded-full flex items-center max-w-[200px] mx-auto"
+                  className="text-white py-2 bg-primaryBlack px-4 rounded-full flex items-center max-w-[200px] mx-auto"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Upload Image

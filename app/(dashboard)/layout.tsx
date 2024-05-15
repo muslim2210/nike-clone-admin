@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "../globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 
@@ -8,11 +8,11 @@ import TopBar from "@/components/layout/TopBar";
 import { ToasterProvider } from "@/lib/ToasterProvider";
 // import { ToasterProvider } from "@/lib/ToasterProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Uniqlo - Admin Dashboard",
-  description: "Admin dashboard to manage Uniqlo data",
+  title: "Nike - Admin Dashboard",
+  description: "Admin dashboard to manage Nike data",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={urbanist.className}>
           <ToasterProvider />
           <div className="flex max-lg:flex-col text-primaryBlack">
             <LeftSideBar />

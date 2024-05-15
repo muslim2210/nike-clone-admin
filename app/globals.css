@@ -4,9 +4,13 @@
 
 @import url("/public/fonts/stylesheet.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-  font-family: "UniqloFont", sans-serif;
-  color: #1b1b1b;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+
+  color: #f8f8f8;
   height: 100%;
 }
 

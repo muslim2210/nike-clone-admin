@@ -75,11 +75,14 @@ const config: Config = {
     extend: {
       fontFamily: {
         uniqlo: ["UniqloFont, sans-serif"],
+        oswald: "Oswald, sans-serif",
+        urbanist: "Urbanist, sans-serif",
       },
       colors: {
-        primaryRed: "#f6303f",
-        primaryBlack: "#1b1b1b",
-        primaryBlack2: "#5e5252",
+        primaryRed: "#881919",
+        primaryBlack2: "#881919",
+        primaryBlack: "#111111",
+        primaryGray: "#f5f5f5",
         "white-1": "#F8F8F8",
         "grey-1": "#616161",
         "grey-2": "#E5E7EB",

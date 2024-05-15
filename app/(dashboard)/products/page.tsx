@@ -37,9 +37,7 @@ const Products = () => {
   ) : (
     <div className="py-12 px-10">
       <div className="flex items-center justify-between">
-        <p className="text-heading2-bold text-primaryBlack font-uniqlo">
-          Products
-        </p>
+        <p className="text-heading2-bold text-primaryBlack">Products</p>
         <Button
           className="bg-primaryBlack text-white"
           onClick={() => router.push("/products/new")}
