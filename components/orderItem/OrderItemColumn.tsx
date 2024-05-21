@@ -9,13 +9,12 @@ export const columns: ColumnDef<OrderItemType>[] = [
     header: "Product",
     cell: ({ row }) => {
       return (
-        <span
-          // href={`/products/${row.original.product._id}`}
-
+        <Link
+          href={`/products/${row.original.product._id}`}
           className="hover:text-red-1"
         >
           {row.original.product.title}
-        </span>
+        </Link>
       );
     },
   },

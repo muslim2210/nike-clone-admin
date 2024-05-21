@@ -29,7 +29,7 @@ const Orders = () => {
   ) : (
     <div className="py-12 px-10">
       <p className="text-heading2-bold text-primaryBlack">Orders</p>
-      <Separator className="bg-primaryBlack mt-4 mb-7" />
+      <Separator className="bg-grey-1 my-5" />
       <DataTable columns={columns} data={orders} searchKey="_id" />
     </div>
   );

@@ -21,17 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={urbanist.className}>
+    <html lang="en">
+      <body className={urbanist.className}>
+        <ClerkProvider>
           <ToasterProvider />
           <div className="flex max-lg:flex-col text-primaryBlack">
             <LeftSideBar />
             <TopBar />
             <div className="flex-1">{children}</div>
           </div>
-        </body>
-      </html>
-    </ClerkProvider>
+        </ClerkProvider>
+      </body>
+    </html>
   );
 }

@@ -10,10 +10,7 @@ export const columns: ColumnDef<OrderColumnType>[] = [
     header: "Order",
     cell: ({ row }) => {
       return (
-        <Link
-          href={`/products/${row.original._id}`}
-          className="hover:text-red-1"
-        >
+        <Link href={`/orders/${row.original._id}`} className="hover:text-red-1">
           {row.original._id}
         </Link>
       );
