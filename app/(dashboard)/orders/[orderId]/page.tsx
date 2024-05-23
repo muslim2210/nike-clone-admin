@@ -24,6 +24,10 @@ const OrderDetails = async ({ params }: { params: { orderId: string } }) => {
           <span className="text-base-medium">{customer.name}</span>
         </p>
         <p className="text-base-bold">
+          Customer email:{" "}
+          <span className="text-base-medium">{customer.email}</span>
+        </p>
+        <p className="text-base-bold">
           Shipping address:{" "}
           <span className="text-base-medium">
             {street}, {city}, {state}, {postalCode}, {country}
@@ -48,5 +52,7 @@ const OrderDetails = async ({ params }: { params: { orderId: string } }) => {
     </div>
   );
 };
+
+export const dynamic = "force-dynamic";
 
 export default OrderDetails;

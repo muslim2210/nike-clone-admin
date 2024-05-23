@@ -40,12 +40,6 @@ const getCorsHeaders = (origin: string) => {
 //POST DATA PRODUCT
 export const POST = async (req: NextRequest) => {
   try {
-    const { userId } = auth();
-
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
-
     await connectToDB();
 
     const {

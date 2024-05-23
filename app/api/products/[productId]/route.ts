@@ -74,10 +74,6 @@ export const POST = async (
   try {
     const { userId } = auth();
 
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
-
     await connectToDB();
 
     const product = await Product.findById(params.productId);
@@ -168,12 +164,6 @@ export const DELETE = async (
   { params }: { params: { productId: string } }
 ) => {
   try {
-    const { userId } = auth();
-
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
-
     await connectToDB();
 
     const product = await Product.findById(params.productId);

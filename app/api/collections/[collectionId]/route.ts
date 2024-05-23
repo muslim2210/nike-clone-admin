@@ -76,10 +76,6 @@ export const POST = async (
   try {
     const { userId } = auth();
 
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
-
     await connectToDB();
 
     let collection = await Collection.findById(params.collectionId);
@@ -116,10 +112,6 @@ export const DELETE = async (
 ) => {
   try {
     const { userId } = auth();
-
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
 
     await connectToDB();
 
