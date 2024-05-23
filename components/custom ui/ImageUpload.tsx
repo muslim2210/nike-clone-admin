@@ -32,7 +32,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
         <div className="flex flex-col justify-center">
           <div className="mb-4 flex flex-wrap items-center gap-4">
             {value.map((url) => (
-              <div className="relative w-[220px] h-[130px]">
+              <div key={url} className="relative w-[220px] h-[130px]">
                 <div className="absolute right-0 top-0 z-10">
                   <Button
                     onClick={() => onRemove(url)}
