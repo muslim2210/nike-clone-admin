@@ -13,11 +13,11 @@ const OrderDetails = async ({ params }: { params: { orderId: string } }) => {
     orderDetails.shippingAddress;
 
   return (
-    <div className="px-10 py-5">
+    <div className="px-3 md:px-10 py-5">
       <h1 className="text-heading2-bold text-primaryBlack text-center mt-3">
         Detail Order
       </h1>
-      <div className="flex flex-col p-10 gap-5">
+      <div className="flex flex-col p-2 md:p-10 gap-5 mt-5">
         <p className="text-base-bold">
           Order ID: <span className="text-base-medium">{orderDetails._id}</span>
         </p>

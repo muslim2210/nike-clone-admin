@@ -37,13 +37,22 @@ const Collections = () => {
   ) : (
     <div className="py-12 px-5 md:px-24">
       <div className="flex items-center justify-between">
-        <p className="text-heading2-bold text-primaryBlack">Collections</p>
+        <h1 className="text-heading3-bold md:text-heading3-bold text-primaryBlack">
+          Collections
+        </h1>
         <Button
-          className="bg-primaryBlack text-white"
+          className="md:hidden bg-primaryBlack text-white"
           onClick={() => router.push("/collections/new")}
         >
           <Plus className="h-4 w-4 mr-2" />
-          Create Collection
+          Create
+        </Button>
+        <Button
+          className="hidden md:flex bg-primaryBlack text-white"
+          onClick={() => router.push("/collections/new")}
+        >
+          <Plus className="h-4 w-4 mr-2" />
+          Create Collections
         </Button>
       </div>
       <Separator className="bg-primaryBlack mt-4 mb-7" />

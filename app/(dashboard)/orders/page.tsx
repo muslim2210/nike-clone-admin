@@ -27,9 +27,11 @@ const Orders = () => {
   return loading ? (
     <Loader />
   ) : (
-    <div className="py-12 px-10">
-      <p className="text-heading2-bold text-primaryBlack">Orders</p>
-      <Separator className="bg-grey-1 my-5" />
+    <div className="py-12 px-3 md:px-10">
+      <p className="text-heading3-bold md:text-heading2-bold text-primaryBlack">
+        Orders
+      </p>
+      <Separator className="bg-primaryBlack mt-4 mb-7" />
       <DataTable columns={columns} data={orders} searchKey="_id" />
     </div>
   );
